@@ -2,7 +2,7 @@ module.exports = {
   // JS, CSS, HTML
   semi: true,
   singleQuote: true,
-  tabWidth: 2,
+  tabWidth: 4,
   trailingComma: "es5",
   printWidth: 100,
 
@@ -15,10 +15,9 @@ module.exports = {
 
   overrides: [
     {
-      // Use PHP parser for .phtml files
+      // Use PHP parser for .phtml files (And .php just to be sure)
       files: ['*.php', '*.phtml'],
       options: {
-        tabWidth: 4,
         parser: "php",
       },
     },

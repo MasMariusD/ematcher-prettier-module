@@ -43,5 +43,5 @@ Set prettier as the default formatter in PHPStorm:
 
 * Go to **Settings > Languages & Frameworks > Prettier**
 * Point it towards node_modules/prettier
-* Set the Run for files to: {**/*,}*.{js,ts,jsx,tsx,css,scss,html,php,phtml}
+* Set the Run for files to: {**/\*,}*.{js,ts,jsx,tsx,css,scss,html,php,phtml}
 * (Optional) Set to reformat on save
