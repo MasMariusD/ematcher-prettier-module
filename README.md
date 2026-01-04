@@ -33,6 +33,9 @@ vendor/
 node_modules/
 dist/
 build/
+files/
+docs/
+data/
 composer.lock
 package-lock.json
 ```
