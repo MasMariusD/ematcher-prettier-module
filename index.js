@@ -1,31 +1,33 @@
 module.exports = {
-    // JS, CSS, HTML
-    semi: true,
-    singleQuote: true,
-    tabWidth: 2,
-    trailingComma: 'es5',
-    printWidth: 100,
+  // JS, CSS, HTML
+  semi: true,
+  singleQuote: true,
+  tabWidth: 2,
+  trailingComma: "es5",
+  printWidth: 100,
 
-    // PHP
-    phpVersion: '7.1',
-    braceStyle: '1tbs',
+  // PHP
+  phpVersion: "7.1",
+  braceStyle: "1tbs",
 
-    // Plugin for PHP
-    plugins: [require.resolve('@prettier/plugin-php')],
+  // Plugin for PHP
+  plugins: [require.resolve("@prettier/plugin-php")],
 
-    overrides: [
+  overrides: [
     {
       // Use PHP parser for .phtml files
-      files: '*.phtml',
+      files: ['*.php', '*.phtml'],
       options: {
-        parser: 'php',
+        tabWidth: 4,
+        parser: "php",
       },
     },
     {
-      files: ['*.html', '*.css'],
+      // HTML and CSS standardly use double quotes, unlike JS/PHP
+      files: ["*.html", "*.css"],
       options: {
-        singleQuote: true,
+        singleQuote: false,
       },
     },
   ],
-}
+};
