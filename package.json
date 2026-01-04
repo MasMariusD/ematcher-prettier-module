@@ -1,10 +1,16 @@
 {
   "name": "ematcher-prettier-module",
   "version": "1.0.0",
-  "description": "",
+  "description": "e-Matcher prettier config for PHP 7.1, PHTML, JS, CSS, HTML",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "prettier": ">=3.0.0"
   },
-  "private": true
+  "dependencies": {
+    "@prettier/plugin-php": "^0.24.0"
+  }
 }
