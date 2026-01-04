@@ -2,11 +2,11 @@
   "name": "ematcher-prettier-module",
   "version": "1.0.0",
   "description": "e-Matcher prettier config for PHP 7.1, PHTML, JS, CSS, HTML",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "author": "Mas Doornik mas@e-matcher.com",
   "peerDependencies": {
     "prettier": ">=3.0.0"
   },
